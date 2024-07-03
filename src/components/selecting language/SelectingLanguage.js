@@ -30,9 +30,9 @@ const SelectingLanguage = () => {
         <div className="relative w-11/12 mr-4">
             <button
                 onClick={toggleDropdown}
-                className=" w-full px-4 py-1 bg-white rounded-full"
+                className=" w-full px-4 py-1 bg-white rounded-full bg-gray-700 bg-opacity-95 shadow-2xl"
             >
-                <div className={`flex items-center justify-center h-14`}>
+                <div className="flex items-center justify-center h-14 text-white">
                     {selectedOption === "فارسی (IR)" && (
                         <img
                             src="https://viking.menew.ir/icons/country-flags/rounded-rectangular/iran--4692.svg"
@@ -50,13 +50,13 @@ const SelectingLanguage = () => {
                     <span>{selectedOption}</span>
                 </div>
                 {isOpen && (
-                <div className=" bg-red-300 rounded-full inline-block py-1">
+                <div className="bg-gray-400 rounded-full inline-block py-1">
                 {options.map((option, index) => (
                     option.label !== selectedOption && (
                         <div
                             key={index}
                             onClick={() => selectOption(option.label)}
-                            className="flex items-center justify-center px-6 cursor-pointer h-8"
+                            className="flex items-center justify-center px-6 cursor-pointer h-8 text-white"
                         >
                             <img
                                 src={option.imgSrc}
