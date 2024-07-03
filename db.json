@@ -1,0 +1,19 @@
+{
+    "home" : {
+          "backgrundImage": [
+              {
+                  "id": "1",
+                  "img": "https://menew.s3.ir-thr-at1.arvanstorage.ir/100094/settings/139796/conversions/viking-normal.png"
+              }
+          ],
+          "قلیان Hookah Special": [
+              {
+                  "id": "1",
+                  "img": "https://viking.menew.ir/_next/image?url=https%3A%2F%2Fmenew.s3.ir-thr-at1.arvanstorage.ir%2F100094%2F131989%2F131668%2Fconversions%2Fhookah-special-normal.png&w=128&q=60",
+                  "name": "Hookah Special",
+                  "desc": "فروش قلیان,۱۲۰۰ درهم"
+              }
+          ]
+    }
+      
+}
