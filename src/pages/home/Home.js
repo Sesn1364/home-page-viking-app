@@ -1,5 +1,6 @@
 // ./pages/home/Home
 
+import HomePageMenu from "../../components/home page menu/HomePageMenu";
 import MiniWebsiteButton from "../../components/mini website button/MiniWebsiteButton";
 import Search from "../../components/search/Search";
 import SelectingLanguage from "../../components/selecting language/SelectingLanguage";
@@ -18,9 +19,9 @@ const Home = () => {
             <div className="fixed inset-x-0 top-48 z-10 mx-auto w-fit max-w-[70%]">
                 <img src="https://viking.menew.ir/_next/image?url=https%3A%2F%2Fmenew.s3.ir-thr-at1.arvanstorage.ir%2F100094%2Fsettings%2F107314%2Fconversions%2Fviking-normal.png&w=256&q=75" alt="" />
             </div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
+            <div className="absolute inset-0 inset-y-1/2">
+                <HomePageMenu/>
+            </div>
         </div>
     );
 }
