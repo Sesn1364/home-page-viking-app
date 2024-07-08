@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+// ./App
 import Home from './pages/home/Home';
 
 function App() {

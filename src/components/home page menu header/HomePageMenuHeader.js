@@ -17,9 +17,9 @@ const HomePageMenuHeader = () => {
     return (
         <>
             {showInitialContent ? (
-                <div className='w-full bg-gray-700 rounded-full flex justify-center items-center'>
-                    <div className="h-14 bg-gradient-to-r from-black via-white to-black animate-enlarge-reduce rounded-full child flex justify-center items-center relative">
-                        <div className="w-[97%] bg-gray-500 rounded-full fixed text-center text-white">
+                <div className='w-full bg-gray-700 rounded-full flex justify-center items-center relative'>
+                    <div className="h-14 bg-gradient-to-r from-black via-white to-black animate-enlarge-reduce rounded-full child flex justify-center items-center">
+                        <div className="w-[99%] bg-gray-500 rounded-full absolute top-1 text-center text-white">
                             <p>کمی صبر,و سپس انتخاب کنید</p>
                             <p>در حین بارگذاری میتوانید دسته بندی ها رو مرور کنید</p>
                         </div>
