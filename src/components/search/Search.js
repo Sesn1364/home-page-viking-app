@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Search = () => {
     return (
-        <button className="bg-gray-700 bg-opacity-95 shadow-2xl w-16 h-16 flex items-center justify-center rounded-full">
+        <button className="bg-gray-700 bg-opacity-95 shadow-2xl sm:w-16 sm:h-16 w-12 h-12 flex items-center justify-center rounded-full">
             <CiSearch size={32} color="white"/>
         </button>
     )

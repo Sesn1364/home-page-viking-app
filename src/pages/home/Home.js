@@ -7,9 +7,9 @@ import SelectingLanguage from "../../components/selecting language/SelectingLang
 
 const Home = () => {
     return (
-        <div className="relative h-[130vh] pt-6">
+        <div className="relative xl:h-[130vh] sm:h-[200vh] h-[210vh] pt-6">
             <div className="absolute inset-0 bg-[url('https://menew.s3.ir-thr-at1.arvanstorage.ir/100094/settings/139796/conversions/viking-normal.png')] bg-cover bg-center bg-fixed filter blur-sm"></div>
-            <div className="fixed top-6 left-0 right-0 flex">
+            <div className="fixed top-6 left-0 right-0 flex items-center">
                 <SelectingLanguage/>
                 <Search/>
             </div>
