@@ -1,11 +1,13 @@
 // ./pages/home/Home
 
+import { useTranslation } from "react-i18next";
 import HomePageMenu from "../../components/home page menu/HomePageMenu";
 import MiniWebsiteButton from "../../components/mini website button/MiniWebsiteButton";
 import Search from "../../components/search/Search";
 import SelectingLanguage from "../../components/selecting language/SelectingLanguage";
 
 const Home = () => {
+    const { t } =useTranslation()
     return (
         <div className="relative xl:h-[130vh] sm:h-[200vh] h-[210vh] pt-6">
             <div className="absolute inset-0 bg-[url('https://menew.s3.ir-thr-at1.arvanstorage.ir/100094/settings/139796/conversions/viking-normal.png')] bg-cover bg-center bg-fixed filter blur-sm"></div>

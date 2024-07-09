@@ -1,12 +1,12 @@
-// // ../../components/selecting language/SelectingLanguage
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const SelectingLanguage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState("");
     const [options, setOptions] = useState([]);
+    const { changeLanguage } = useContext(LanguageContext);
 
     useEffect(() => {
         axios.get('http://localhost:4000/home')
@@ -26,6 +26,11 @@ const SelectingLanguage = () => {
 
     const selectOption = (optionLabel) => {
         setSelectedOption(optionLabel);
+        if (optionLabel === "فارسی (IR)") {
+            changeLanguage('fa');
+        } else if (optionLabel === "English (US)") {
+            changeLanguage('en');
+        }
         setIsOpen(false); // Close the dropdown after selecting an option
     };
 

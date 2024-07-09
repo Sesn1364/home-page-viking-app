@@ -15,68 +15,81 @@
           "homeMenuItems": [
                 {
                     "id": "1",
-                    "title": "سالادها",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Salad.svg"
+                    "title_fa": "سالادها",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Salad.svg",
+                    "title_en": "Salads"
                 },
                 {
                     "id": "2",
-                    "title": "پیش غذا",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips-1.svg"
+                    "title_fa": "پیش غذا",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips-1.svg",
+                    "title_en": "Appetizer"
                 },
                 {
                     "id": "3",
-                    "title": "Sushi",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Nationality/Sushi.svg"
+                    "title_fa": "Sushi",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Nationality/Sushi.svg",
+                    "title_en": "Sushi"
                 },
                 {
                     "id": "4",
-                    "title": "غذای اصلی گوشتی",
-                    "img": "https://public-cdn.menew.ir/icons/mono/steak.svg"
+                    "title_fa": "غذای اصلی گوشتی",
+                    "img": "https://public-cdn.menew.ir/icons/mono/steak.svg",
+                    "title_en": "main meat dish"
                 },
                 {
                     "id": "5",
-                    "title": "پاستا",
-                    "img": "https://public-cdn.menew.ir/icons/mono/noodle.svg"
+                    "title_fa": "پاستا",
+                    "img": "https://public-cdn.menew.ir/icons/mono/noodle.svg",
+                    "title_en": "Pasta"
                 },
                 {
                     "id": "6",
-                    "title": "غذای اصلی دریا",
-                    "img": "https://public-cdn.menew.ir/icons/mono/sea-food.svg"
+                    "title_fa": "غذای اصلی دریا",
+                    "img": "https://public-cdn.menew.ir/icons/mono/sea-food.svg",
+                    "title_en": "Main of sea"
                 },
                 {
                     "id": "7",
-                    "title": "غذای اصلی ماکیان",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips.svg"
+                    "title_fa": "غذای اصلی ماکیان",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips.svg",
+                    "title_en": "Main of chickens"
                 },
                 {
                     "id": "8",
-                    "title": "ماکتل بار",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Mocktail.svg"
+                    "title_fa": "ماکتل بار",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Mocktail.svg",
+                    "title_en": "Mocktail bar"
                 },
                 {
                     "id": "9",
-                    "title": "بار گرم",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Hot-Coffee-Based.svg"
+                    "title_fa": "بار گرم",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Hot-Coffee-Based.svg",
+                    "title_en": "Hot bar"
                 },
                 {
                     "id": "10",
-                    "title": "دسر",
-                    "img": "https://public-cdn.menew.ir/icons/mono/dessert.svg"
+                    "title_fa": "دسر",
+                    "img": "https://public-cdn.menew.ir/icons/mono/dessert.svg",
+                    "title_en": "Dessert"
                 },
                 {
                     "id": "11",
-                    "title": "چای بار",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Herbal-Tea-1.svg"
+                    "title_fa": "چای بار",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Herbal-Tea-1.svg",
+                    "title_en": "Tea bar"
                 },
                 {
                     "id": "12",
-                    "title": "آیس کافی",
-                    "img": "https://public-cdn.menew.ir/icons/mono/ice-coffee.svg"
+                    "title_fa": "آیس کافی",
+                    "img": "https://public-cdn.menew.ir/icons/mono/ice-coffee.svg",
+                    "title_en": "Coffee ice"
                 },
                 {
                     "id": "13",
-                    "title": "قلیان Hookah Special",
-                    "img": "https://public-cdn.menew.ir/icons/mono/Others/Vegetable-1.svg"
+                    "title_fa": "قلیان Hookah Special",
+                    "img": "https://public-cdn.menew.ir/icons/mono/Others/Vegetable-1.svg",
+                    "title_en": "Hookah Special"
                 }
           ]
     }

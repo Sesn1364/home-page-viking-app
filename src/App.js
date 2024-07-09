@@ -1,9 +1,13 @@
 // ./App
+import { LanguageProvider } from './context/LanguageContext';
 import Home from './pages/home/Home';
 
 function App() {
   return (
-    <Home/>
+    <LanguageProvider>
+
+      <Home/>
+    </LanguageProvider>
   );
 }
 
