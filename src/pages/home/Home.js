@@ -7,23 +7,34 @@ import Search from "../../components/search/Search";
 import SelectingLanguage from "../../components/selecting language/SelectingLanguage";
 import React, { useState, useEffect } from 'react';
 import LoadPage from "../../components/load page/LoadPage";
+import axios from "axios";
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [hasError, setHasError] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 2000); 
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:4000/home');
+                if (response.status === 200 && response.data) {
+                    setIsLoading(false);
+                } else {
+                    setHasError(true);
+                }
+            } catch (error) {
+                setHasError(true);
+            }
+        };
 
-        return () => clearTimeout(timer);
+        fetchData();
     }, []);
 
     const { t } =useTranslation()
 
     return (
         <>
-        {isLoading ? <LoadPage/> :
+        {isLoading || hasError ? <LoadPage/> :
         <div className="relative xl:h-[130vh] sm:h-[200vh] h-[210vh] pt-6">
             <div className="absolute inset-0 bg-[url('https://menew.s3.ir-thr-at1.arvanstorage.ir/100094/settings/139796/conversions/viking-normal.png')] bg-cover bg-center bg-fixed filter blur-sm"></div>
             <div className="fixed top-6 left-0 right-0 flex items-center">

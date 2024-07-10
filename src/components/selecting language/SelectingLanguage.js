@@ -1,3 +1,4 @@
+// ../../components/selecting language/SelectingLanguage
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { LanguageContext } from '../../context/LanguageContext';
@@ -14,10 +15,12 @@ const SelectingLanguage = () => {
                 const languageOptions = response.data.selectingLanguageItem;
                 setOptions(languageOptions);
                 if (languageOptions.length > 0) {
-                    setSelectedOption(languageOptions[0].label); // Set the default selected option
+                    setSelectedOption(languageOptions[0].label); 
                 }
             })
-            .catch(error => console.error('Error fetching language options:', error));
+            .catch(error => {
+                console.error('Error fetching language options:', error);
+            });
     }, []);
 
     const toggleDropdown = () => {
@@ -31,7 +34,7 @@ const SelectingLanguage = () => {
         } else if (optionLabel === "English (US)") {
             changeLanguage('en');
         }
-        setIsOpen(false); // Close the dropdown after selecting an option
+        setIsOpen(false); 
     };
 
     return (
