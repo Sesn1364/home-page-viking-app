@@ -41,7 +41,7 @@ const SelectingLanguage = () => {
         <div className="relative w-11/12 mr-4">
             <button
                 onClick={toggleDropdown}
-                className="w-full px-4 py-1 rounded-full bg-gray-700 bg-opacity-95 shadow-2xl"
+                className="w-full px-4 py-1 rounded-full bg-[#44403c] bg-opacity-90 "
             >
                 <div className="flex items-center justify-center h-14 text-white">
                     {options.map(option => 

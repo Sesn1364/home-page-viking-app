@@ -5,7 +5,7 @@ import HomePageMenuItems from "../home page menu items/HomePageMenuItems"
 
 const HomePageMenu = () => {
     return (
-        <div className="py-2 px-4 bg-gray-800 bg-opacity-90 shadow-2xl rounded-3xl z-50">
+        <div className="py-2 px-4 rounded-3xl bg-white/10 backdrop-blur-[20px]">
             <HomePageMenuHeader/>
             <HomePageMenuItems/>
         </div>
