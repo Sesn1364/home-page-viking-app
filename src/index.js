@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom/client'; // تغییر این خط
 import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { LanguageProvider } from './context/LanguageContext'; // مسیر رو چک کن
+import './index.css';
+const root = ReactDOM.createRoot(document.getElementById('root')); // استفاده از createRoot
 root.render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
   </React.StrictMode>
 );
+

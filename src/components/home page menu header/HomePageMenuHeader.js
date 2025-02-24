@@ -1,12 +1,12 @@
-// // "../home page menu header/HomePageMenuHeader"
-
 import React, { useState, useEffect, useContext } from 'react';
 import { GoArrowLeft } from 'react-icons/go';
 import { LanguageContext } from '../../context/LanguageContext';
+import { useNavigate } from 'react-router-dom'; // اضافه کردن useNavigate
 
 const HomePageMenuHeader = () => {
     const [showInitialContent, setShowInitialContent] = useState(true);
     const { language } = useContext(LanguageContext);
+    const navigate = useNavigate(); // مقداردهی useNavigate
 
     const firstText = language === 'fa' ? 'کمی صبر,وسپس انتخاب کنید' : 'Wait a little, and then choose';
     const secondText = language === 'fa' ? 'در حین بارگذاری میتوانید دسته بندی ها را مرور کنید' : 'You can browse the categories while loading';
@@ -38,7 +38,10 @@ const HomePageMenuHeader = () => {
                 <div className="sm:flex justify-between items-center text-white text-2xl">
                     <p className='text-center'>{thirdText}<b>{boldText}</b></p>
                     <p className='text-center'>{fourthText}</p>
-                    <button className="bg-gray-500 rounded-full flex justify-around items-center sm:max-w-40 font-bold w-full">
+                    <button 
+                        className="bg-gray-500 rounded-full flex justify-around items-center sm:max-w-40 font-bold w-full"
+                        onClick={() => navigate('/menu')} // افزودن این بخش برای هدایت به صفحه Menu
+                    >
                         <p className="w-2/3">{sixthText}</p>
                         <GoArrowLeft />
                     </button>
